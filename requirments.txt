@@ -1,0 +1,14 @@
+#[dbt]
+dbt==0.20.2
+dbt-sqlserver==0.20.1
+
+#[workflow]
+prefect==0.15.6
+
+#[api]
+uvicorn==0.15.0
+fastapi==0.54.1
+python-jose==3.3.0
+pydantic==1.8.2
+pyyaml==5.4.1
+sqlmodel==0.0.4

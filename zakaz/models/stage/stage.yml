@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: store
+    description: "Таблица склады и аптеки"
+    columns:
+      - name: id_store
+        description: "идентификатор склада из F3tail"
+        
+      - name: store_name
+        description: "Наименование склада"
+
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+  - name: remains
+    description: "Таблица с остатками по скаладм аптек, свернутая по наименованию для анализа"
+    columns:
+      - name: id_store
+        description: "Идентификатор склада"
+
+      - name: nm
+        description: "Наименование для анализа"
+
+      - name: quantity
+        description: "Количество в базовых единицах"
+
+      - name: sum_supplier
+        description: "Сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "Сумма в ценах продажи"        
