@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: remains_min
+    description: "Остатки в отделах минимального ассортимента"
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: id_store
+        description: "идентификатор склада"
+
+      - name: store_name
+        description: "Наименование склада"
+
+      - name: nm
+        description: "Товар название для анализа"
+
+      - name: quantity
+        description: "Количество в базовых единицах"
+
+      - name: sum_supplier
+        description: "Сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "Сумма в розничных ценах"

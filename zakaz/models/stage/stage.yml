@@ -32,4 +32,31 @@ models:
         description: "Сумма в ценах поставки"
 
       - name: sum_sal
-        description: "Сумма в ценах продажи"        
+        description: "Сумма в ценах продажи"
+  
+  - name: sales
+    description: "Продажи по чекам в разрезе аптек"
+    columns:
+      - name: date_cheque
+        description: "Дата чека"
+
+      - name: id_contractor
+        description: "Идентификатор склада"
+
+      - name: contractor_name
+        description: "Наименование склада"
+
+      - name: nm
+        description: "Наименование товара для анализа"
+
+      - name: quantity
+        description: "количество в базовых единицах"
+
+      - name: summ_discount
+        description: "сумма скидки по"
+
+      - name: sum_supplier
+        description: "сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "сумма в ценах продажи"        
