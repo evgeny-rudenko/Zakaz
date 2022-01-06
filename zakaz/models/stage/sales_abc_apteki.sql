@@ -30,4 +30,4 @@ sum (SUM_SAL) as SUM_SAL
  where DATE_CHEQUE > GETDATE() - {{ var('analysis_days') }}
  group by id_contractor, contractor_name, NM
  ) as a
- 
+  
