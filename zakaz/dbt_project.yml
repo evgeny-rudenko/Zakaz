@@ -10,6 +10,7 @@ config-version: 2
 vars:
   analysis_days: 30
 
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'zdorzakaz'
 
