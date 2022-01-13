@@ -60,3 +60,93 @@ models:
 
       - name: sum_sal
         description: "сумма в ценах продажи"        
+  
+  - name: sales_abc_apteki
+    description: "Формирование ABC  анализа по продажам. Дни анализа берутся из переменной в файле проекта"
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара для анализа"
+
+      - name: sum_quantity
+        description: "Количество в базовых единицах"
+
+      - name: sum_discount
+        description: "Сумма скидки"
+
+      - name: sum_supplier
+        description: "Сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "Сумма в ценах продажи (полная без скидки)"
+
+      - name: sum_goods_nakop
+        description: "суммя продажи накопительная вал"
+
+      - name: sm_percent
+        description: "процент от оборота"
+
+      - name: sm_percent_nakop
+        description: "процент накопительный оборота для расчета группы ABC"
+
+      - name: summa_apteka
+        description: "Сумма продаж по аптеке за период (без учета скидки)"
+
+      - name: abc_group
+        description: "Группа ABC"
+
+      - name: max_date_cheque
+        description: "Дата последней продажи"
+  
+  - name: invoice
+    description: "Содержимое приходных накладных"
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: document_state
+        description: "Состояние документа PROC - проведен"
+
+      - name: document_date
+        description: "Дата документа"
+
+      - name: nm
+        description: "Наименование для анализа"
+
+      - name: quantity
+        description: "количество"
+
+      - name: sum_supplier
+        description: "сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "сумма в ценах продажи"
+  
+  - name: on_the_way
+    description: "Товар в пути до аптеки "
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование для анализа"
+
+      - name: quantity
+        description: "количество в базовых единицах"
+
+      - name: sum_supplier
+        description: ""
+
+      - name: sum_sal
+        description: ""

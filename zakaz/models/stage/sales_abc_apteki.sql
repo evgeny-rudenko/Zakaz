@@ -18,14 +18,16 @@ case
     when {{smpnkl()}} >75 and {{smpnkl()}} <=93 then 'C'
     when {{smpnkl()}} >93 then 'C1'
 else 'UNDEFINED'
-end as ABC_GROUP
+end as ABC_GROUP,
+max_date_cheque
 
 from (
   select id_contractor, contractor_name, NM , 
 sum (QUANTITY) as SUM_QUANTITY, 
 sum(SUMM_DISCOUNT) as SUM_DISCOUNT,
 sum (SUM_SUPPLIER) as SUM_SUPPLIER,
-sum (SUM_SAL) as SUM_SAL
+sum (SUM_SAL) as SUM_SAL ,
+max (date_cheque) as max_date_cheque
  from {{ ref('sales') }}
  where DATE_CHEQUE > GETDATE() - {{ var('analysis_days') }}
  group by id_contractor, contractor_name, NM

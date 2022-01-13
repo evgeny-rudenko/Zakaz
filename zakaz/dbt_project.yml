@@ -9,6 +9,7 @@ config-version: 2
 # дней для анализа продаж
 vars:
   analysis_days: 30
+  days_without_sales: 30
 
 
 # This setting configures which "profile" dbt uses for this project.

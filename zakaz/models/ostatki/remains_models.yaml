@@ -27,3 +27,38 @@ models:
 
       - name: sum_sal
         description: "Сумма в розничных ценах"
+  
+  - name: last_sale_date
+    description: "Дата последней продажи"
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара для анализа"
+
+      - name: last_sale_date
+        description: "Дата последней продажи. Если она есть в выгруженных чеках"
+  - name: remains_apteka
+    description: "Остатки в разрезе аптек"
+    columns:
+      - name: id_contractor
+        description: "Ижентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара для анализа"
+
+      - name: quantity
+        description: "Количество в базовых единицах"
+
+      - name: sum_supplier
+        description: "сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "сумма в ценах продажи"
