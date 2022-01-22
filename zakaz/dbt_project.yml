@@ -10,7 +10,13 @@ config-version: 2
 vars:
   analysis_days: 30
   days_without_sales: 30
-
+  A1_days: 21
+  A_days: 21
+  B_days: 15
+  C_days: 15
+  C1_days: 15
+  delivery_days: 7
+  remains_days: 21
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'zdorzakaz'

@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: zakaz_stat
+    description: ""
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара"
+
+      - name: prodano
+        description: "Продано за период анализа"
+
+      - name: remains_qty
+        description: "Осталось в аптеке"
+
+      - name: remains_days
+        description: "Остаток товара в днях"
+
+      - name: sold_per_day
+        description: "Продано за период для анализа"
+
+      - name: on_the_way
+        description: "Количество товара в пути"
+
+      - name: abc_group
+        description: "Группа ABC"

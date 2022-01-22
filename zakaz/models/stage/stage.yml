@@ -146,7 +146,7 @@ models:
         description: "количество в базовых единицах"
 
       - name: sum_supplier
-        description: ""
+        description: "Сумма в ценах поставки"
 
       - name: sum_sal
-        description: ""
+        description: "Сумма в ценах продажи"

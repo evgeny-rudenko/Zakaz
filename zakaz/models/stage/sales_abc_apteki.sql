@@ -15,8 +15,8 @@ case
     when {{smpnkl()}} >0 and {{smpnkl()}} <=40 then 'A'
     when {{smpnkl()}} >40 and {{smpnkl()}} <=60 then 'A1'
     when {{smpnkl()}} >60 and {{smpnkl()}} <=75 then 'B'
-    when {{smpnkl()}} >75 and {{smpnkl()}} <=93 then 'C'
-    when {{smpnkl()}} >93 then 'C1'
+    when {{smpnkl()}} >75 and {{smpnkl()}} <=94 then 'C'
+    when {{smpnkl()}} >94 then 'C1'
 else 'UNDEFINED'
 end as ABC_GROUP,
 max_date_cheque

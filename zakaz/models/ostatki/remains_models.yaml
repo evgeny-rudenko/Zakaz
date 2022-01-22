@@ -62,3 +62,39 @@ models:
 
       - name: sum_sal
         description: "сумма в ценах продажи"
+  
+  - name: overstock
+    description: "Сверхзапас товара в аптеках"
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара"
+
+      - name: prodano
+        description: "Продано в базовых единицах"
+
+      - name: remains_qty
+        description: "Остаток товара в аптеке"
+
+      - name: remains_days
+        description: "Остаток товара в днях"
+
+      - name: sold_per_day
+        description: "Продано за период в аптеке"
+
+      - name: on_the_way
+        description: "Количество товара в пути"
+
+      - name: abc_group
+        description: "Группа ABC для анализа"
+
+      - name: overstock_qty
+        description: "Сверхзапас в аптеке"
+
+      - name: overstock_qty_apteki
+        description: "Сверхзапас по наименованию во всех аптеках"
