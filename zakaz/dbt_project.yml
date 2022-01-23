@@ -12,9 +12,15 @@ vars:
   days_without_sales: 30
   A1_days: 21
   A_days: 21
-  B_days: 15
-  C_days: 15
-  C1_days: 15
+  B_days: 21
+  C_days: 21
+  C1_days: 21
+  A1_days_remains: 15
+  A_days_remains: 15
+  B_days_remains: 15
+  C_days_remains: 14
+  C1_days_remains: 14
+
   delivery_days: 7
   remains_days: 21
 
