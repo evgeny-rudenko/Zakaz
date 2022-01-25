@@ -9,10 +9,8 @@
 select 
 s.id_contractor,
 s.contractor_name,
-r.id_store ,
-s.store_name, 
 r.nm,
-sum (r.quantity) as quantity_sklad,
+sum (r.quantity) as sklad_qty,
 sum (r.sum_supplier) as sum_supplier_sklad,
 sum (r.sum_sal) as sum_sal_sklad
 
@@ -26,6 +24,4 @@ and s.id_store in (1,7) -- склады основной и маркировка
 group by
 s.id_contractor,
 s.contractor_name,
-r.id_store ,
-s.store_name, 
 r.nm 

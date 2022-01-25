@@ -98,3 +98,23 @@ models:
 
       - name: overstock_qty_apteki
         description: "Сверхзапас по наименованию во всех аптеках"
+  - name: remains_sklad
+    description: "Остаток товара на центральном складе аптечной сети"
+    columns:
+      - name: id_contractor
+        description: "Идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара"
+
+      - name: sklad_qty
+        description: "Количество в базовых единицах"
+
+      - name: sum_supplier_sklad
+        description: "Сумма в ценах поставки"
+
+      - name: sum_sal_sklad
+        description: "Сумма в ценах продажи"

@@ -9,7 +9,7 @@ select
 saa.id_contractor,
 saa.contractor_name,
 saa.nm,
-saa.sum_quantity as prodano,
+ROUND(saa.sum_quantity,2) as prodano,
 remains_qty = isnull (ra.quantity, 0) ,
 remains_days =round( (isnull (ra.quantity, 0)+isnull (otw.quantity,0))/saa.sum_quantity*30,2),  
 sold_per_day = ROUND( saa.sum_quantity/{{ var('analysis_days') }},2), --- параметр из проекта
