@@ -103,6 +103,48 @@ models:
       - name: max_date_cheque
         description: "Дата последней продажи"
   
+  - name: qty_abc_apteki
+    description: "ABC анализ по количеству проданных упаковок"
+    columns:
+      - name: id_contractor
+        description: "идентификатор аптеки"
+
+      - name: contractor_name
+        description: "Имя аптеки"
+
+      - name: nm
+        description: "Наименование товара"
+
+      - name: sum_quantity
+        description: "количество проданных упаковок "
+
+      - name: sum_discount
+        description: "сумма скидки"
+
+      - name: sum_supplier
+        description: "Сумма в ценах поставщика"
+
+      - name: sum_sal
+        description: "сумма в ценах продажи"
+
+      - name: sum_goods_nakop
+        description: "Сумма накопительная в цена продажи"
+
+      - name: sm_percent
+        description: "Процент от оборота"
+
+      - name: sm_percent_nakop
+        description: "Процент от оборота накопительный"
+
+      - name: summa_apteka
+        description: "Сумма продажи по аптеке"
+
+      - name: qty_abc_group
+        description: "Группа ABC по количеству "
+
+      - name: max_date_cheque
+        description: "Дата последнего чека"
+  
   - name: invoice
     description: "Содержимое приходных накладных"
     columns:

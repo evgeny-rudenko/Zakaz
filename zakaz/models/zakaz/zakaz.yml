@@ -30,3 +30,5 @@ models:
 
       - name: abc_group
         description: "Группа ABC"
+      - name: QTY_ABC_GROUP
+        description: "Группа ABC по количеству"
