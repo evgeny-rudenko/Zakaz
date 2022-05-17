@@ -30,5 +30,12 @@ models:
 
       - name: abc_group
         description: "Группа ABC"
+      
       - name: QTY_ABC_GROUP
         description: "Группа ABC по количеству"
+      
+      - name: DISCOUNT_ABC_GROUP
+        description: "Группа  ABC по продажам со скидкой"
+      
+      - name: MARGIN_ABC_GROUP
+        description: "Группа ABC по чистой наценке"

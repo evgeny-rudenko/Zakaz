@@ -145,6 +145,90 @@ models:
       - name: max_date_cheque
         description: "Дата последнего чека"
   
+  - name: discount_abc_apteki
+    description: "Группа ABC по продажам со скидкой"
+    columns:
+      - name: id_contractor
+        description: "Код аптеки"
+
+      - name: contractor_name
+        description: "Наименование аптеки"
+
+      - name: nm
+        description: "Наименование товара для анализа"
+
+      - name: sum_quantity
+        description: "Количество проданных упаковок"
+
+      - name: sum_discount
+        description: "Сумма скидки"
+
+      - name: sum_supplier
+        description: "Сумма в ценах поставки"
+
+      - name: sum_sal
+        description: "Сумма в ценах продажи со скидкой"
+
+      - name: sum_goods_nakop
+        description: ""
+
+      - name: sm_percent
+        description: ""
+
+      - name: sm_percent_nakop
+        description: ""
+
+      - name: summa_apteka
+        description: ""
+
+      - name: discount_abc_group
+        description: "Группа  ABC по продажам со скидкой"
+
+      - name: max_date_cheque
+        description: "Дата последнего чека"
+
+  - name: margin_abc_apteki
+    description: "Группа ABC по марже"
+    columns:
+      - name: id_contractor
+        description: ""
+
+      - name: contractor_name
+        description: ""
+
+      - name: nm
+        description: ""
+
+      - name: sum_quantity
+        description: ""
+
+      - name: sum_discount
+        description: ""
+
+      - name: sum_supplier
+        description: ""
+
+      - name: sum_sal
+        description: ""
+
+      - name: sum_goods_nakop
+        description: ""
+
+      - name: sm_percent
+        description: ""
+
+      - name: sm_percent_nakop
+        description: ""
+
+      - name: summa_apteka
+        description: ""
+
+      - name: margin_abc_group
+        description: ""
+
+      - name: max_date_cheque
+        description: ""
+
   - name: invoice
     description: "Содержимое приходных накладных"
     columns:
